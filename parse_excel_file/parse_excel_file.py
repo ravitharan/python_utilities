@@ -96,7 +96,7 @@ if __name__ == '__main__':
         pyperclip.copy(msg)
         phone_number = f'+94{phone}'
         url = WHATSAPP_URL.format(phone_number)
-        webbrowser.get('firefox').open_new_tab(url)
+        webbrowser.open_new_tab(url)
         input('Enter to continue ...')
 
     print(f'\n\nWaiting list students ({len(waiting_students)}):')
@@ -106,5 +106,5 @@ if __name__ == '__main__':
         pyperclip.copy(msg)
         phone_number = f'+94{phone}'
         url = WHATSAPP_URL.format(phone_number)
-        webbrowser.get('firefox').open_new_tab(url)
+        webbrowser.open_new_tab(url)
         input('Enter to continue ...')
